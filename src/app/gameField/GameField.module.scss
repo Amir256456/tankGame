@@ -1,0 +1,27 @@
+.gameField {
+	@apply relative w-full h-1/2;
+
+	.userTank {
+		@apply absolute bottom-20 left-0  w-[19rem];
+	}
+
+	.botTank {
+		@apply absolute bottom-20 w-[19rem];
+	}
+
+	.gun {
+		@apply absolute bottom-[8.75rem] left-52 w-20 h-2 bg-[#033500];
+	}
+
+	.rotatedGun {
+		@apply absolute bottom-44 left-52 w-20 h-2 bg-[#033500] -rotate-45;
+	}
+
+	.bullet {
+		@apply absolute bg-yellow-600 w-4 h-4 rounded-full bottom-[8.5rem] left-72;
+	}
+
+	.rotatedBullet {
+		@apply absolute bg-yellow-600 w-4 h-4 rounded-full bottom-52 left-[17.12rem];
+	}
+}
