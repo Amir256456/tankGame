@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from 'react'
 import star from '../../../public/assets/star.png'
 import { GameField } from '../gameField/GameField'
 import styles from './Level2.module.scss'
-import { usePrepare, validateAnswer } from './utils'
+import { prepare, validateAnswer } from './utils'
 
 export function Level2() {
 	const starImages = Array(3).fill(star)
@@ -24,7 +24,7 @@ export function Level2() {
 
 	useEffect(() => {
 		if (gameState === 'prepare') {
-			const { botPosition, time, distanceBetweenTanks, speed } = usePrepare()
+			const { botPosition, time, distanceBetweenTanks, speed } = prepare()
 			setSpeed(speed)
 			setBotPosition(botPosition)
 			setTime(time)
