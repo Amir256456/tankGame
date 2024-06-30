@@ -1,6 +1,6 @@
 import { IProperties } from '@/types/gameType'
 
-export const usePrepare = () => {
+export const prepare = () => {
 	let botPosition = Math.round(
 		Math.random() * ((window.innerWidth * 40) / 100) + 1
 	)
